@@ -4,6 +4,8 @@ import {
   BACK_BUTTON,
   PLAY_DICE_GAME_BUTTON,
   TITLE_TEXT,
+  FLIP_COIN_BUTTON,
+  EIGHT_BALL_BUTTON,
 } from '../utils/styles'
 
 Page({
@@ -33,15 +35,38 @@ Page({
       }
     })
 
+    // Title
     hmUI.createWidget(hmUI.widget.TEXT, {
       ...TITLE_TEXT,
       text: 'Play Game',
     })
+
+    // Dice Button
     hmUI.createWidget(hmUI.widget.BUTTON, {
       ...PLAY_DICE_GAME_BUTTON,
       click_func: () => {
         hmApp.gotoPage({
           file: 'page/dice',
+        })
+      },
+    })
+
+    // Coin Flip Button
+    hmUI.createWidget(hmUI.widget.BUTTON, {
+      ...FLIP_COIN_BUTTON,
+      click_func: () => {
+        hmApp.gotoPage({
+          file: 'page/coin',
+        })
+      },
+    })
+
+    // 8 Ball Button
+    hmUI.createWidget(hmUI.widget.BUTTON, {
+      ...EIGHT_BALL_BUTTON,
+      click_func: () => {
+        hmApp.gotoPage({
+          file: 'page/8ball',
         })
       },
     })

@@ -26,7 +26,9 @@
         "page": {
           "pages": [
             "page/index",
-            "page/dice"
+            "page/dice",
+            "page/coin",
+            "page/8ball"
           ]
         }
       },

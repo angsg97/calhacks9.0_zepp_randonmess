@@ -35,6 +35,8 @@ Page({
         })
       },
     })
+
+    // Timer for dice roll animation
     
     hmUI.createWidget(hmUI.widget.BUTTON, {
       ...ROLLDICE_BUTTON,
