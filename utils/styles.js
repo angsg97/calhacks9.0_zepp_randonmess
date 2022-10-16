@@ -81,6 +81,15 @@ export const FOOD_BUTTON = {
     text_size: px(28),
 }
 
+export const SPORTS_BUTTON = {
+    ...BUTTON_PRESETS,
+    ...CENTER_SCREEN,
+    text: gettext('Sports'),
+    x: px(183),
+    y: px(340),
+    text_size: px(28),
+}
+
 export const EIGHT_BALL_IMG = {
     src: '8ball.png',
     x: 125,
