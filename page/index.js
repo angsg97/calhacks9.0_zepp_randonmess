@@ -10,7 +10,7 @@ Page({
   build() {
     hmUI.createWidget(hmUI.widget.TEXT, {
       ...EQUIVALENT_MORE_FOOD_NUM,
-      text: 'Play IMGAE(M)',
+      text: 'Play Game',
     })
     hmUI.createWidget(hmUI.widget.BUTTON, {
       ...EQUIVALENT_TO_BUTTON,

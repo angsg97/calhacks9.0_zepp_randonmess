@@ -4,12 +4,12 @@ export const EQUIVALENT_TO_BUTTON = {
     text: gettext('Dice'),
     press_color: 0x333333,
     normal_color: 0x1a1a1a,
-    x: px(108),
+    x: px(150),
     y: px(376),
-    w: px(264),
+    w: px(100),
     h: px(56),
     color: 0xffffff,
-    text_size: px(32),
+    text_size: px(28),
     radius: px(28),
 }
 
@@ -37,6 +37,12 @@ export const ROLLDICE_BUTTON = {
     color: 0xffffff,
     text_size: px(32),
     radius: px(28),
+}
+
+export const ROLLDICE_IMG = {
+    src: '1.png',
+    x: 125,
+    y: 70,
 }
 
 export const EQUIVALENT_MORE_FOOD_NUM = {
