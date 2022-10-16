@@ -17,8 +17,8 @@ export const PLAY_DICE_GAME_BUTTON = {
     text: gettext('Dice'),
     press_color: 0x333333,
     normal_color: 0x1a1a1a,
-    x: px(50),
-    y: px(376),
+    x: px(183),
+    y: px(160),
     w: px(100),
     h: px(56),
     color: 0xffffff,
@@ -30,8 +30,8 @@ export const FLIP_COIN_BUTTON = {
     text: gettext('Coin'),
     press_color: 0x333333,
     normal_color: 0x1a1a1a,
-    x: px(200),
-    y: px(376),
+    x: px(183),
+    y: px(100),
     w: px(100),
     h: px(56),
     color: 0xffffff,
@@ -40,7 +40,6 @@ export const FLIP_COIN_BUTTON = {
 }
 
 export const ROLLDICE_BUTTON = {
-    text: gettext('Roll Dice'),
     press_color: 0x333333,
     normal_color: 0x1a1a1a,
     x: px(108),
@@ -52,16 +51,10 @@ export const ROLLDICE_BUTTON = {
     radius: px(28),
 }
 
-export const ROLLDICE_IMG = {
-    src: '1.png',
-    x: 125,
-    y: 70,
-}
-
 export const TITLE_TEXT = {
     text: '',
-    x: px(75),
-    y: px(200),
+    x: px(150),
+    y: px(20),
     w: px(375),
     h: px(80),
     color: 0xee801e,
@@ -78,8 +71,8 @@ export const EIGHT_BALL_BUTTON = {
     text: gettext('8 Ball'),
     press_color: 0x333333,
     normal_color: 0x1a1a1a,
-    x: px(350),
-    y: px(376),
+    x: px(183),
+    y: px(220),
     w: px(100),
     h: px(56),
     color: 0xffffff,

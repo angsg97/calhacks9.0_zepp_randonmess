@@ -3,11 +3,10 @@ import { gettext } from 'i18n'
 import {
   BACK_BUTTON,
   ROLLDICE_BUTTON,
-  ROLLDICE_IMG,
 } from '../utils/styles'
 
 const diceRollImgFile = (num) => {
-  return `${num}.png`
+  return `coin/${num == 0 ? 'heads':'tails'}.png`
 }
 
 const vibrate = hmSensor.createSensor(hmSensor.id.VIBRATE)
@@ -23,8 +22,9 @@ Page({
     // })
 
     const diceNum = hmUI.createWidget(hmUI.widget.IMG, {
-      src: '1.png',
-      ...ROLLDICE_IMG
+      src: 'coin/heads.png',
+      x: 125,
+      y: 70,
     })
 
     hmUI.createWidget(hmUI.widget.BUTTON, {
@@ -40,12 +40,13 @@ Page({
     
     hmUI.createWidget(hmUI.widget.BUTTON, {
       ...ROLLDICE_BUTTON,
+      text: 'Flip Coin',
       click_func: () => {
         vibrate.stop()
         vibrate.scene = 27
         vibrate.start()
 
-        diceRoll = Math.floor(Math.random() * 6) + 1
+        diceRoll = Math.round(Math.random())
         diceNum.setProperty(hmUI.prop.MORE, {
           src: diceRollImgFile(diceRoll)
         })
