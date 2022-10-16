@@ -17,5 +17,5 @@ We originally wanted to develop a mapping powered app that empowered users to tr
 ## What's next for Xplore
 We hope we are able to continue building Xplore's geo-tag feature, as we want to enable waypoint tracking and hyperlocal sharing of products. 
 
-##Video
+## Video
 <p><a href="https://youtu.be/sbEjGK0KBLI">Video</a> can be found here.</p>
