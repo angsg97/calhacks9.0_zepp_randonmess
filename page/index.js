@@ -6,6 +6,7 @@ import {
   TITLE_TEXT,
   FLIP_COIN_BUTTON,
   EIGHT_BALL_BUTTON,
+  FOOD_BUTTON
 } from '../utils/styles'
 
 Page({
@@ -67,6 +68,16 @@ Page({
       click_func: () => {
         hmApp.gotoPage({
           file: 'page/8ball',
+        })
+      },
+    })
+
+    // Food Button
+    hmUI.createWidget(hmUI.widget.BUTTON, {
+      ...FOOD_BUTTON,
+      click_func: () => {
+        hmApp.gotoPage({
+          file: 'page/food',
         })
       },
     })

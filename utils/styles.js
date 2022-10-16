@@ -80,6 +80,19 @@ export const EIGHT_BALL_BUTTON = {
     radius: px(28),
 }
 
+export const FOOD_BUTTON = {
+    text: gettext('Food'),
+    press_color: 0x333333,
+    normal_color: 0x1a1a1a,
+    x: px(183),
+    y: px(280),
+    w: px(100),
+    h: px(56),
+    color: 0xffffff,
+    text_size: px(28),
+    radius: px(28),
+}
+
 export const EIGHT_BALL_IMG = {
     src: '8ball.png',
     x: 125,

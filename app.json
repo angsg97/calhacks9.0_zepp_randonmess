@@ -28,7 +28,8 @@
             "page/index",
             "page/dice",
             "page/coin",
-            "page/8ball"
+            "page/8ball",
+            "page/food"
           ]
         }
       },
