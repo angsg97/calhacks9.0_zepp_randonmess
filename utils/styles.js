@@ -13,8 +13,9 @@ const BUTTON_PRESETS = {
     radius: px(28),
 }
 
-const CENTER_SCREEN = {
-    w: px(100),
+const CENTER_SCREEN_LIST_BUTTON = {
+    w: px(120),
+    x: px(233-120/2),
 }
 
 export const BACK_BUTTON = {
@@ -25,18 +26,16 @@ export const BACK_BUTTON = {
 
 export const PLAY_DICE_GAME_BUTTON = {
     ...BUTTON_PRESETS,
-    ...CENTER_SCREEN,
+    ...CENTER_SCREEN_LIST_BUTTON,
     text: gettext('Dice'),
-    x: px(183),
     y: px(160),
     text_size: px(28),
 }
 
 export const FLIP_COIN_BUTTON = {
     ...BUTTON_PRESETS,
-    ...CENTER_SCREEN,
+    ...CENTER_SCREEN_LIST_BUTTON,
     text: gettext('Coin'),
-    x: px(183),
     y: px(100),
     text_size: px(28),
 }
@@ -49,7 +48,7 @@ export const ROLLDICE_BUTTON = {
 
 export const TITLE_TEXT = {
     text: '',
-    x: px(150),
+    x: px(152),
     y: px(20),
     w: px(375),
     h: px(80),
@@ -65,27 +64,23 @@ export const TITLE_TEXT = {
 
 export const EIGHT_BALL_BUTTON = {
     ...BUTTON_PRESETS,
-    ...CENTER_SCREEN,
+    ...CENTER_SCREEN_LIST_BUTTON,
     text: gettext('8 Ball'),
-    x: px(183),
     y: px(220),
     text_size: px(28),
 }
 
 export const FOOD_BUTTON = {
     ...BUTTON_PRESETS,
-    ...CENTER_SCREEN,
+    ...CENTER_SCREEN_LIST_BUTTON,
     text: gettext('Food'),
-    x: px(183),
     y: px(280),
     text_size: px(28),
 }
 
 export const SPORTS_BUTTON = {
     ...BUTTON_PRESETS,
-    ...CENTER_SCREEN,
-    text: gettext('Sports'),
-    x: px(183),
+    ...CENTER_SCREEN_LIST_BUTTON,
     y: px(340),
     text_size: px(28),
 }
@@ -94,4 +89,16 @@ export const EIGHT_BALL_IMG = {
     src: '8ball.png',
     x: 125,
     y: 70,
+}
+
+export const EIGHT_BALL_TEXT = {
+    text: 'Ask me a Question',
+    x: px(100),
+    y: px(50),
+    w: px(300),
+    h: px(80),
+    color: 0xee801e,
+    text_size: px(32),
+    align_h: hmUI.align.LEFT,
+    align_v: hmUI.align.CENTER_V,
 }

@@ -3,6 +3,7 @@ import { gettext } from 'i18n'
 import {
   BACK_BUTTON,
   ROLLDICE_BUTTON,
+  EIGHT_BALL_TEXT,
 } from '../utils/styles'
 
 const diceRollImgFile = (num) => {
@@ -20,6 +21,10 @@ Page({
     //   y: 100,
     //   text: `${diceRoll}`,
     // })
+    
+    hmUI.createWidget(hmUI.widget.TEXT, {
+      ...EIGHT_BALL_TEXT,
+    })
 
     const diceNum = hmUI.createWidget(hmUI.widget.IMG, {
       src: '8ball/8ball1.png',
@@ -41,7 +46,7 @@ Page({
       text: 'Shake 8Ball',
       click_func: () => {
         vibrate.stop()
-        vibrate.scene = 27
+        vibrate.scene = 28
         vibrate.start()
 
         diceRoll = Math.floor(Math.random() * 20) + 1

@@ -40,7 +40,7 @@ Page({
       ...ROLLDICE_BUTTON,
       click_func: () => {
         vibrate.stop()
-        vibrate.scene = 27
+        vibrate.scene = 28
         vibrate.start()
 
         diceRoll = Math.floor(Math.random() * 6) + 1

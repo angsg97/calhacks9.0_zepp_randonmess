@@ -36,10 +36,10 @@ Page({
     
     hmUI.createWidget(hmUI.widget.BUTTON, {
       ...ROLLDICE_BUTTON,
-      text: 'Choose Sport',
+      text: 'Pick Sport',
       click_func: () => {
         vibrate.stop()
-        vibrate.scene = 27
+        vibrate.scene = 28
         vibrate.start()
 
         diceRoll = Math.floor(Math.random() * 15) + 1

@@ -41,7 +41,7 @@ Page({
       text: 'What to eat?',
       click_func: () => {
         vibrate.stop()
-        vibrate.scene = 27
+        vibrate.scene = 28
         vibrate.start()
 
         diceRoll = Math.floor(Math.random() * 14) + 1

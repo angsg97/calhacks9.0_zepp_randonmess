@@ -61,6 +61,7 @@ Page({
     // Sports Button
     hmUI.createWidget(hmUI.widget.BUTTON, {
       ...SPORTS_BUTTON,
+      text: 'Sports',
       click_func: () => {
         hmApp.gotoPage({
           file: 'page/sports',
