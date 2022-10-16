@@ -38,7 +38,6 @@ Page({
     
     hmUI.createWidget(hmUI.widget.BUTTON, {
       ...ROLLDICE_BUTTON,
-      text: 'Roll Dice',
       click_func: () => {
         vibrate.stop()
         vibrate.scene = 27

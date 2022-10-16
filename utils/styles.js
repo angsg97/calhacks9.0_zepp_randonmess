@@ -1,54 +1,50 @@
 import { gettext } from 'i18n'
 
-export const BACK_BUTTON = {
-    text: gettext('Back'),
+const BUTTON_PRESETS = {
+    text: gettext(''),
     press_color: 0x333333,
     normal_color: 0x1a1a1a,
     x: px(108),
-    y: px(376),
+    y: px(0),
     w: px(264),
     h: px(56),
     color: 0xffffff,
     text_size: px(32),
     radius: px(28),
+}
+
+const CENTER_SCREEN = {
+    w: px(100),
+}
+
+export const BACK_BUTTON = {
+    ...BUTTON_PRESETS,
+    text: gettext('Back'),
+    y: px(376),
 }
 
 export const PLAY_DICE_GAME_BUTTON = {
+    ...BUTTON_PRESETS,
+    ...CENTER_SCREEN,
     text: gettext('Dice'),
-    press_color: 0x333333,
-    normal_color: 0x1a1a1a,
     x: px(183),
     y: px(160),
-    w: px(100),
-    h: px(56),
-    color: 0xffffff,
     text_size: px(28),
-    radius: px(28),
 }
 
 export const FLIP_COIN_BUTTON = {
+    ...BUTTON_PRESETS,
+    ...CENTER_SCREEN,
     text: gettext('Coin'),
-    press_color: 0x333333,
-    normal_color: 0x1a1a1a,
     x: px(183),
     y: px(100),
-    w: px(100),
-    h: px(56),
-    color: 0xffffff,
     text_size: px(28),
-    radius: px(28),
 }
 
 export const ROLLDICE_BUTTON = {
-    press_color: 0x333333,
-    normal_color: 0x1a1a1a,
-    x: px(108),
+    ...BUTTON_PRESETS,
+    text: gettext('Roll Dice'),
     y: px(300),
-    w: px(264),
-    h: px(56),
-    color: 0xffffff,
-    text_size: px(32),
-    radius: px(28),
 }
 
 export const TITLE_TEXT = {
@@ -68,29 +64,21 @@ export const TITLE_TEXT = {
  */
 
 export const EIGHT_BALL_BUTTON = {
+    ...BUTTON_PRESETS,
+    ...CENTER_SCREEN,
     text: gettext('8 Ball'),
-    press_color: 0x333333,
-    normal_color: 0x1a1a1a,
     x: px(183),
     y: px(220),
-    w: px(100),
-    h: px(56),
-    color: 0xffffff,
     text_size: px(28),
-    radius: px(28),
 }
 
 export const FOOD_BUTTON = {
+    ...BUTTON_PRESETS,
+    ...CENTER_SCREEN,
     text: gettext('Food'),
-    press_color: 0x333333,
-    normal_color: 0x1a1a1a,
     x: px(183),
     y: px(280),
-    w: px(100),
-    h: px(56),
-    color: 0xffffff,
     text_size: px(28),
-    radius: px(28),
 }
 
 export const EIGHT_BALL_IMG = {

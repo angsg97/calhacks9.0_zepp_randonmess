@@ -23,7 +23,7 @@ Page({
 
     const diceNum = hmUI.createWidget(hmUI.widget.IMG, {
       src: 'food/food1.png',
-      x: 125,
+      x: 135,
       y: 70
     })
 
