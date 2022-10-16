@@ -1,6 +1,6 @@
 import { gettext } from 'i18n'
 
-export const EQUIVALENT_TO_BUTTON = {
+export const PLAY_DICE_GAME_BUTTON = {
     text: gettext('Dice'),
     press_color: 0x333333,
     normal_color: 0x1a1a1a,
@@ -45,7 +45,7 @@ export const ROLLDICE_IMG = {
     y: 70,
 }
 
-export const EQUIVALENT_MORE_FOOD_NUM = {
+export const TITLE_TEXT = {
     text: '',
     x: px(75),
     y: px(200),

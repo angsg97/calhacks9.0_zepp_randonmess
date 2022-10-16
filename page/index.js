@@ -2,8 +2,8 @@ import { gettext } from 'i18n'
 
 import {
   BACK_BUTTON,
-  EQUIVALENT_TO_BUTTON,
-  EQUIVALENT_MORE_FOOD_NUM,
+  PLAY_DICE_GAME_BUTTON,
+  TITLE_TEXT,
 } from '../utils/styles'
 
 Page({
@@ -34,14 +34,14 @@ Page({
     })
 
     hmUI.createWidget(hmUI.widget.TEXT, {
-      ...EQUIVALENT_MORE_FOOD_NUM,
+      ...TITLE_TEXT,
       text: 'Play Game',
     })
     hmUI.createWidget(hmUI.widget.BUTTON, {
-      ...EQUIVALENT_TO_BUTTON,
+      ...PLAY_DICE_GAME_BUTTON,
       click_func: () => {
         hmApp.gotoPage({
-          file: 'page/page1',
+          file: 'page/dice',
         })
       },
     })

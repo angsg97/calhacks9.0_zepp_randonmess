@@ -4,8 +4,6 @@ import {
   BACK_BUTTON,
   ROLLDICE_BUTTON,
   ROLLDICE_IMG,
-  EQUIVALENT_TO_BUTTON,
-  EQUIVALENT_MORE_FOOD_NUM,
 } from '../utils/styles'
 
 const diceRollImgFile = (num) => {

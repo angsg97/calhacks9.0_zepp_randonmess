@@ -26,7 +26,7 @@
         "page": {
           "pages": [
             "page/index",
-            "page/page1"
+            "page/dice"
           ]
         }
       },
